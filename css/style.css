@@ -53,7 +53,7 @@ nav div a:hover{
 
 main
 .envoltura{
-    width: 80rem;
+    width: 1600px;
     height: 25rem;
     align-items: center;
     display: flex;
@@ -61,14 +61,14 @@ main
     background:linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)),
     url("../imagenes/LagosPatagonia.jpg");
     background-size: cover;
-    background-position: center;
-}
+    background-position: center;}
+
 .envoltura-texto h2{
     color: aliceblue;
     text-align: center;
     font-size:2rem ;
-
 }
+
 .envoltura-texto p{
     color: aliceblue;
     text-align: center;
@@ -96,6 +96,7 @@ h3{
     font-weight: lighter;
     margin-bottom: 1rem;
 }
+
 .parrafo1{
     font-size: 1.2rem;
     text-align: center;
@@ -122,8 +123,8 @@ footer{
     background-color: #4b92a6;
     text-transform: capitalize;
     padding: 50px 0px;
-
 }
+
 .contenedorfooter{
     max-width: 1200px;
     margin: 0 auto
@@ -146,7 +147,6 @@ footer{
     border-bottom: 2px solid #000941;
     padding-bottom: 5px;
     display: inline-block;
-
 }
 
 .footer_1 ul li a{
@@ -155,18 +155,19 @@ footer{
     display: block;
     margin-bottom: 15px;
     transition: all .3s ease;
-    }
+}
 
 .footer_1 ul li a:hover {
     color: #000941;
     padding-left: 6px;
-    }
+}
 
 .footer_1 ul li{
     font-size: 16px;
     text-decoration: none;
     display: block;
     margin-bottom: 15px;
+
 }
 .social-link a {
 display: inline-block;
@@ -188,4 +189,75 @@ transition: all .5s ease;
     .contenedorfooter {text-align: center;}
     .footer_1 {width: 100%;
     margin-bottom: 30px;}
+}
+
+
+.asideaprende{
+    float: left;
+    background-color: #0768a4;
+    height: 902px;
+    width: 300px;
+}
+
+.asideaprende ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 25px;
+    transition: all .3s ease;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+
+.asideaprende ul li a:hover {
+    color: #000941;
+    padding-left: 6px;
+    }
+
+.aprendeapescar h2{
+    color: #000941;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+    background-color: aliceblue;
+    height: 60px;
+}
+
+.mainaprende{
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: right;    
+    height: 900px;
+}
+
+.aprendecontenedor1{
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: right;    
+    height: 195px;
+    border-bottom: 2px solid #000941;
+}
+
+.aprendecontenedor2{
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: right;    
+    height: 195px;
+    margin-top: 10px;
+    border-bottom: 2px solid #000941;
+}
+
+.item h3{
+    color: #000941;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.item p{
+    color: #000941;
+    height: 195px;
+    padding-left: 15px;
+    text-align: justify;
+    padding-right: 25px; 
 }
