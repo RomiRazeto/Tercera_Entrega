@@ -31,27 +31,169 @@
         </div>   
     </nav>
 
-    <main>
-        <div>
-            <h2 class="tiempo">Tiempo
-            </h2>
+    <main class="forescast">
+        <h1>Forescast</h1>
+        <p class="lugar"> Lugar: Arica, Chile</p>
+        <p class="lugar">Fecha: Sabado, 25 de mayo de 2024</p>
 
-            <h2 class="temperatura">Temperatura del Agua
-            </h2>   
+        <div class="contenedorbusqueda">
+            <select class="regiones">
+                <option>Selecciona Región</option>
+                <option>XV Región de Arica y Parinacota</option>
+                <option>I Región de Tarapaca</option>
+                <option>II Región de Antofagasta</option>
+                <option>III Región de Atacama</option>
+                <option>IV Región de Coquimbo</option>
+                <option>V Región de Valparaíso</option>
+                <option>RM Región Metropolitana</option>
+                <option>VI Región del Libertador General Bernardo OHiggins</option>
+                <option>VII Región del Maule</option>
+                <option>XVI Región del Ñuble</option>
+                <option>VIII Región del Bio Bio</option>
+                <option>IX Región de La Araucanía</option>
+                <option>XIV Región de Los Ríos</option>
+                <option>X Región de Los Lagos</option>
+                <option>XI Región de Aysén</option>
+                <option>XII Región de Magallanes y Antartica</option>
+              </select>
+            </div>
 
-            <h2 class="oleaje">oleaje
-            </h2>
-            
-            <h2 class="fases lunares">Fases Lunares
-            </h2>
-
-            <h2 class="mareas">Mareas
-            </h2>
-            
+        <div class="contenedorbusqueda">
+            <select class="ciudades">
+                <option>Selecciona Ciudad</option>
+                <option>Arica</option>
+                <option>Iquique</option>
+                <option>Antofagasta</option>
+                <option>Mejillones</option>
+                <option>Taltal</option>
+                <option>Tocopilla</option>
+                <option>Copiapó</option>
+                <option>Calera</option>
+                <option>Tierra Amarilla</option>
+                <option>Chañaral</option>
+                <option>La Serena</option>
+                <option>Coquimbo</option>
+                <option>San Antonio</option>
+                <option>Viña del Mar</option>
+                <option>Valparaiso</option>
+                <option>Concepción</option>
+              </select>
         </div>
+
+        <section class="tiempo">
             
+                <div class="grid-tiempo">
+
+                    <div class="card1">    
+                        <h2>Tiempo</h2>
+                        <img src="/imagenes/tiempo.png" height="80rem" width="80rem" alt="tiempo">
+                        <p> Soleado </p>
+                    </div>
+
+                    <div class="card1">
+                        <h2>Vientos</h2>
+                        <img src="/imagenes/viento.png" height="80rem" width="80rem" alt="tiempo">
+                        <p> 6 km/h </p>
+                    </div>
+
+                    <div class="card1">
+                        <h2>Temperatura</h2>
+                        <img src="/imagenes/niveldecalor.png" height="80rem" width="80rem" alt="tiempo">
+                        <p> 16 C° </p>
+                    </div>
+
+                    <div class="card1">
+                        <h2>Humedad</h2>
+                        <img src="/imagenes/humedad.png" height="80rem" width="80rem" alt="tiempo">
+                        <p> 86% </p>
+                    </div>
+
+                    <div class="card1">
+                        <h2>Visibilidad</h2>
+                        <img src="/imagenes/visibilidad.png" height="80rem" width="80rem" alt="tiempo">
+                        <p> 15 KM </p>
+                    </div>
+
+                </div>
+        </section>
+
+        <section class="temperaturadelagua"> 
+
+            <div class="grid-temperaturadelagua">
+
+                <div class="card4">
+                    <h2>Temperatura del Agua</h2> 
+                </div>
      
-       
+                <div class="card4">
+                    <span>En este momento la temperatura actual del agua en Arica es de 19°C. La temperatura media del agua en Arica en el dia de hoy es de 19°C.</span> 
+                </div> 
+            </div>
+            
+                 
+        </section>
+          
+        <section class="grid-oleaje">
+                <h2 >Oleaje</h2>
+
+                    <div class:cards2>
+                        <h2>Dirección del oleaje</h2>
+                        <span> SW (221°)</span>
+                    </div>   
+
+                    <div class:cards2>
+                        <h2>Altura significativa</h2>
+                        <span>1.6 m</span>
+                    </div> 
+                    
+                    <div class:cards2>
+                        <h2>Periodo de olas</h2>
+                        <span>12.3 s</span>
+                    </div> 
+                    
+        </section>
+            
+        <section class="fases lunares">
+                <h2 >Fases Lunares</h2>
+
+                <div class="grid-faseslunares">
+
+                    <div class:cards3>    
+                        <img src="/imagenes/lunacuartomenguante.png" height="80rem" width="80rem" alt="tiempo">
+                        <h2>Luna Cuarto Menguante</h2>
+                        <p> 30 de mayo de 2024 a las 13:13 hr. </p>
+                    </div>
+
+                    <div class:cards3>    
+                        <img src="/imagenes/lunanueva.png" height="80rem" width="80rem" alt="tiempo">
+                        <h2>Luna Nueva</h2>
+                        <p>6 de junio de 2024 a las 8:38 h</p>
+
+                    <div class:cards3>    
+                        <img src="/imagenes/lunacuartocreciente.png" height="80rem" width="80rem" alt="tiempo">
+                        <h2>Luna Cuarto Creciente</h2>
+                        <p> 14 de junio de 2024 a la 1:18  </p>
+                    </div>
+
+                    <div class:cards3>    
+                        <img src="/imagenes/lunallena.png" height="80rem" width="80rem" alt="tiempo">
+                        <h2>Luna Llena</h2>
+                        <p> 21 de junio de 2024 a las 21:08 h </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+        </section>
+        
+        <section class="mareas">  
+                <h2>Mareas</h2>
+                <h3>Tabla de Mareas</h3>
+                <img src="/imagenes/tablademareas.png" height="1600rem" width="1200rem" alt="tabla de mareas">
+        </section>
+            
     </main>
     <footer class="footer">
 
