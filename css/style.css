@@ -7,11 +7,14 @@ list-style: none;
 }
 
 body{
-    background: color #ffffff;
+    background: color #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header{
-    background-color: #ffffff;
+    background-color: #f0f8ff;
 }
 
 .contenedorheader{
@@ -169,6 +172,7 @@ footer{
     background-color: #4b92a6;
     text-transform: capitalize;
     padding: 50px 0px;
+    margin-top: auto;
 }
 
 .contenedorfooter{
@@ -240,6 +244,25 @@ transition: all .5s ease;
 
 
 /*Aprende*/
+/*Main Aprende*/
+
+.main-aprende {
+    background-color: #f0f8ff;
+}
+
+.main-aprende .encabezado {
+    height: 6rem;
+    background-color: #000941;
+}
+
+.main-aprende .titulo-aprende {
+    font-size: 1.8rem;
+    color: #f0f8ff;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: normal;
+}
+
 /*Aside Aprende*/
 .asideaprende{
     float: left;
@@ -261,24 +284,12 @@ transition: all .5s ease;
 .asideaprende ul li a:hover {
     color: #000941;
     padding-left: 6px;
-    }
-
-
-/*Main Aprende*/
-.aprendeapescar h2{
-    color: #000941;
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 2rem;
-    background-color: aliceblue;
-    height: 60px;
 }
 
-.mainaprende{
-    background-color: #f0f8ff;
-    display: flex;
-    justify-content: right;    
-    height: 900px;
+/*Seccion Aprende*/
+.aprendapescar {
+    background-color: aliceblue;
+    height: 60px;
 }
 
 .aprendecontenedor1{
@@ -305,6 +316,7 @@ transition: all .5s ease;
     padding-top: 20px;
     font-weight: bold;
 }
+
 .item p{
     color: #000941;
     height: 195px;
@@ -312,7 +324,6 @@ transition: all .5s ease;
     text-align: justify;
     padding-right: 25px; 
 }
-
 
 
 /*Main destinos*/
@@ -323,18 +334,19 @@ transition: all .5s ease;
 
 .maindestinos h1{
     color: #f0f8ff;
-    font-size: 2rem;
+    font-size: 1.8rem;
     background-color: #000941;
     margin: none;
-    height: 6rem;
-    padding-top: 60px;
+    height: 4rem;
+    padding-top: 30px;
+    font-weight: normal;
 }
+
 .grid-layout{
     height: 800px;
     display: grid;
     grid-template-rows: 33.3%  33.3% 33.3%;
     grid-template-columns: 30% 70%;
-
     background-color: #f0f8ff;
     width: 90%;
     margin: 0 auto;
@@ -344,7 +356,6 @@ transition: all .5s ease;
     margin-bottom: 15px;
     margin-top: 15px;
     margin-left: 10px;
-    
     background-color: #f0f8ff;
 }
 
@@ -362,29 +373,34 @@ transition: all .5s ease;
     padding-top: 20px;
 }
 
-
 .elemento p {
     color: #000941;
     font-size: 18px;
     text-align: justify;
     padding: 20px 20px;
     font-weight: lighter;
-    
+}
+
+@media(max-width:991px){
+    .maindestinos .titulo-destino{font-size: 1.2rem;}
+    .grid-layout { height: 20rem; width: 90%; display: inline-block;}
+    .elemento .titulodestino {margin-top: 5px; padding-top: 5px;
+    margin-bottom: 5px; padding-bottom: 2px;}
+    .elemento p { font-size: 14px; padding-bottom: 5px; padding-top: 2px;}
 }
 
 /*Main forescast*/
-
-main .forescast{
+.forescast{
     background-color: #f0f8ff;
+    margin-top: 0;
 }
 
 .forescast h1 {
     font-size: 2rem;
     color: #000941;
     text-align: center;
-    margin: 10px;
+    padding-top: 20px;
 }
-
 
  .lugar { 
     color: #000941;
@@ -399,7 +415,7 @@ main .forescast{
     display: inline-block;
     padding-top: 20px;
     margin-bottom: 2rem;
-    margin-left: 10rem;
+    margin-left: 2rem;
 }
 
 .contenedorbusqueda .regiones {
@@ -421,6 +437,14 @@ main .forescast{
     font-size: 16px;
 }
 
+ div .titulotiempo { 
+    color: #000941;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
  .tiempo .grid-tiempo { 
     height: 200px;
     display: grid;
@@ -440,64 +464,296 @@ main .forescast{
     border-radius: 15px;
 }
 
-    .card1 h2 {
-        text-align: center;
-        font-size: 18px;
-        padding-top: 20px; 
-    }
+.card1 h2 {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px; 
+}
 
-    .card1 img {
-        text-align: center;
-        padding-bottom: 5px;
-        padding-top: 10px;
-        margin-left: 85px;
-    }
+.card1 img {
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin-left: 85px;
+ }
 
-    .card1 p {
-        text-align: center;
-        font-size: 20px;
-        padding-bottom: 25px; 
-    }
+.card1 p {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 25px; 
+}
 
-
-    .temperaturadelagua {
-        height: 8rem;
-        margin-top: 1rem;}
+.temperaturadelagua {
+    height: 8rem;
+    margin-top: 1rem;
+}
         
-       
-       
-    .temperaturadelagua .grid-temperaturadelagua{ 
-        height: 8rem;
-        display: grid;
-        grid-template-columns: 20% 80%;
-        grid-template-rows: 100%;
-        margin: 0 auto;}
+.temperaturadelagua .grid-temperaturadelagua{ 
+    height: 8rem;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    margin: 0 auto;
+}
     
-    .grid-temperaturadelagua .card4 {
-        margin-bottom: 15px;
-        margin-left: 15px;
-        margin-right: 15px;
-        border: .5px solid white;
-        background-color: #4b92a6;
-        border-radius: 15px;
-    }
+.grid-temperaturadelagua .card4 {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid #000941;
+    border-radius: 15px;
+    background-color: #4b92a6;
+}
     
-    .grid-temperaturadelagua .card4 h2 {
-        color:#000941;
-        text-align: center;
-        font-size: 1.3rem;
-        padding-top: 20px;
-        padding-bottom: 5px;
-        padding-left: 15px;
-        padding-right: 15px; 
+.grid-temperaturadelagua .card4 h2 {
+    color:#000941;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+
+.grid-temperaturadelagua .card4 span {
+    color:#000941;
+    text-align: justify;
+    font-size: 18px;
+    display: block;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+          
+.titulo-oleaje { 
+    color: #000941;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.grid-oleaje {
+    height: 8rem;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 100%;
+    margin: 0 auto;}
+    
+.grid-oleaje .card2{
+    background-color: #4b92a6;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid #000941;
+    border-radius: 15px;
     }
 
-    .grid-temperaturadelagua .card4 span {
-        color:#000941;
-        text-align: justify;
-        font-size: 18px;
-        display: block;
-        padding-top: 25px;
-        padding-left: 25px;
-        padding-right: 25px;
+.card2 h2{
+    color: #000941;  
+    text-align: center;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px; 
     }
+
+.card2 p{
+    color: #000941; 
+    text-align: center;
+    font-size: 22px;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+    }
+
+.titulo-fases {
+    color: #000941;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+} 
+
+.grid-fases {
+    height: 16rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin: 0 auto;
+}
+
+.grid-fases .card3 {
+    display: flex;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #4b92a6;
+    border: 1px solid #000941;
+    border-radius: 15px;
+}
+
+.card3 h2{
+    color: #000941;  
+    text-align: center;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+    
+.card3 p{
+    color: #000941; 
+    text-align: center;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+}
+
+.titulo-mareas {
+    color: #000941;
+    text-align: center;
+    margin-top: 4%;
+    font-size: 1.8rem;
+}
+    
+.mareas h3 {
+    color: #000941;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1.2rem;
+ }
+
+.mareas img {
+    margin-top: 2rem;
+    margin-left: 10rem;
+    padding-bottom: 2rem;
+}
+
+
+@media(max-width:991px){
+     div .titulotiempo { text-align: center;}
+    .tiempo .grid-tiempo {height: 120px;}
+    .grid-tiempo .card1 img{display: none;}
+    .card1{margin-left: 5px; margin-right: 5px;
+    background-color: #f0f8ff;}
+    .card1 h2 {color: #000941;font-size: 14px;
+    padding-top: 10px;}
+    .card1 p {color: #000941;font-size: 14px;
+        padding-top: 10px; font-weight: bold;}
+    }
+
+@media(max-width:991px){
+    .temperaturadelagua { height: 6rem;}
+    .temperaturadelagua .grid-temperaturadelagua {display: flex;
+    height: 6rem;}
+    .grid-temperaturadelagua .card4 {margin-left: 5px;
+    margin-right: 5px}
+    .grid-temperaturadelagua .card4 h2 {font-size: 1rem;}
+    .grid-temperaturadelagua .card4 span {font-size: 14px;padding-top: 10px;}
+}
+
+@media(max-width:991px) {
+    .titulo-oleaje { text-align: center; padding-top: 3px;}
+    .grid-oleaje {height: 6rem; background-color: #4b92a6; padding-top: 10px;}
+    .grid-oleaje .card2 {background-color: #f0f8ff; }
+    .grid-oleaje .card2 h2 {font-size: 16px;
+    padding-top: 10px; }
+    .card2 p {font-size: 16px; padding-top:1px; } 
+}
+
+@media(max-width:991px){
+    .titulo-fases {text-align: center; width: 100%;;}
+    .grid-fases {display:grid; width: 100%;}
+    .grid-fases .card3 img { display: none;}
+    .grid-fases .card3 {display:inline; padding-top: 3px;}
+    .card3 h2{font-size: 16px;padding-top: 10px;}
+    .card3 p {font-size: 14px; padding-right: 1px; padding-top: 5px;}
+}
+
+@media(max-width:991px){
+    .mareas img {margin-left: 1rem; width: 95%; }
+}
+
+
+/*Main Especies*/
+.main-especies {
+    background: #f0f8ff;
+}
+
+div .titulo-especies{
+    background-color: #000941;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 1.8rem;
+    height: 5rem;
+    font-weight: normal;
+}
+
+.aside-especies {
+    float: left;
+    background-color: #0768a4;
+    height: 900px;
+    width: 300px;
+}
+
+.aside-especies h4 {
+    font-size: 20px;
+    border-bottom: 1px solid #f0f8ff;
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 1.5rem;
+    padding-left: 15px;
+}
+
+.aside-especies ul li {
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+.especies {
+    background-color: #f0f8ff;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000941;
+}
+
+.especies .pezespada h2 {
+    color: #000941;
+    font-size: 1.5rem;
+    display: flex;
+    background: #4b92a6;
+    padding-left: 20px;
+}
+    
+.contenido{
+    display: flex;
+}
+
+.contenido img { 
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    width: 50%;
+    height: 50%;
+    border-radius: 50px
+}
+
+.especies p {
+    color: #000941;
+    text-align: justify;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+ 
