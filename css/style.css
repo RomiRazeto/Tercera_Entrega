@@ -323,7 +323,38 @@ transition: all .5s ease;
     padding-left: 15px;
     text-align: justify;
     padding-right: 25px; 
+    padding-bottom: 10px;
 }
+
+@media(max-width:991px){
+    .main-aprende .encabezado .titulo-aprende {font-size: 1.5rem;}
+    .asideaprende {display: block; width: 100%; height: 50%;}
+    .asideaprende ul li { text-align: center;}
+    .aprendeapescar {display: inline-block;}
+    .aprendecontenedor1 { display: inline-block; 
+    border-bottom: none;}
+    .aprendecontenedor2 { display: inline-block; 
+    border-bottom: none;}
+
+    .aprendecontenedor1 .item iframe {padding-left: 50px;}
+    .aprendecontenedor2 .item iframe {padding-left: 50px;}
+    
+    .item .p1 {padding-bottom:px; margin-bottom: 5px; height: 80px;}
+    .item .p2 {padding-bottom:px; margin-bottom: 5px; height: 80px;}
+}
+
+
+/*@media(max-width:991px) {
+    .main-especies .titulo-especies {font-size: 1.2rem;
+    }
+    .aside-especies  {display: block; width: 100%;}
+    .aside-especies ul li { text-align: center;}
+    .especies div { display: block;}
+    .especies .pezespada h2 { background-color: #f0f8ff; padding-top: 10px;}
+    .especies .contenido img {width: 80%;}
+    .especies .contenido p {font-size: 14px; padding-left: 20px;
+    padding-right: 70px;}
+}*/
 
 
 /*Main destinos*/
@@ -750,10 +781,21 @@ div .titulo-especies{
     border-radius: 50px
 }
 
-.especies p {
+.especies .contenido p {
     color: #000941;
     text-align: justify;
     padding-right: 50px;
     margin-top: 20px;
 }
- 
+
+@media(max-width:991px) {
+    .main-especies .titulo-especies {font-size: 1.2rem;
+    }
+    .aside-especies  {display: block; width: 100%;}
+    .aside-especies ul li { text-align: center;}
+    .especies div { display: block;}
+    .especies .pezespada h2 { background-color: #f0f8ff; padding-top: 10px;}
+    .especies .contenido img {width: 80%;}
+    .especies .contenido p {font-size: 14px; padding-left: 20px;
+    padding-right: 70px;}
+}
