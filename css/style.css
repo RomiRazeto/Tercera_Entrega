@@ -344,19 +344,6 @@ transition: all .5s ease;
 }
 
 
-/*@media(max-width:991px) {
-    .main-especies .titulo-especies {font-size: 1.2rem;
-    }
-    .aside-especies  {display: block; width: 100%;}
-    .aside-especies ul li { text-align: center;}
-    .especies div { display: block;}
-    .especies .pezespada h2 { background-color: #f0f8ff; padding-top: 10px;}
-    .especies .contenido img {width: 80%;}
-    .especies .contenido p {font-size: 14px; padding-left: 20px;
-    padding-right: 70px;}
-}*/
-
-
 /*Main destinos*/
 .maindestinos{
     background-color: #f0f8ff;
