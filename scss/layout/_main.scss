@@ -1,0 +1,282 @@
+// Main Home//
+main{
+    .envoltura{
+        width: 1440px;
+    height: 25rem;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)),
+    url("../imagenes/LagosPatagonia.jpg");
+    background-size: cover;
+    background-position: center;
+    .envoltura-texto h2 {
+        color: aliceblue;
+        text-align: center;
+        font-size:2rem;
+        padding-top: 100px;
+    }
+    .envoltura-texto p{
+        color: aliceblue;
+        text-align: center;
+        font-size:1.5rem;
+        margin-bottom: 20px;
+        margin-top: 10px; 
+    }  
+    }
+    .destinos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%; 
+    }
+}
+
+// Main Forescast//
+.forescast{   
+    font-size: 2rem;
+    color: #000941;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #f0f8ff;
+
+        h1{
+            font-size: 2rem;
+            color: #000941;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .lugar { 
+            color: #000941;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bold;
+            padding-top: 8px;
+            background-color: #f0f8ff;}
+        
+        .contenedorbusqueda{
+            display: inline-block;
+            padding-top: 20px;
+            margin-bottom: 2rem;
+            margin-left: 2rem;
+            background-color: #f0f8ff;
+
+
+            .regiones {
+                color: #000941;
+                height: 2rem;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            .ciudades {
+                color: #000941;
+                height: 2rem;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            option {
+                color: #000941;
+                font-size: 16px;
+            }
+            }
+
+    .titulotiempo{
+        color: #000941;
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        font-size: 1.8rem;
+    }
+
+    .titulo-oleaje{
+        color: #000941;
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        font-size: 1.8rem;
+    }
+
+    .titulo-fases{
+        color: #000941;
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        font-size: 1.8rem;
+    }
+
+    
+}
+
+
+//Main Destinos//
+
+.main-destinos{
+     background-color: #f0f8ff;
+     text-align: center;  
+
+    .titulo-destino{
+        color: #ffffff;
+        font-size: 1.8rem;
+        background-color: #000941;
+        margin: none;
+        height: 4rem;
+        padding-top: 30px;
+        font-weight: normal;
+    }
+
+    .grid-layout{
+        height: 800px;
+        display: grid;
+        grid-template-rows: 33.3%  33.3% 33.3%;
+        grid-template-columns: 30% 70%;
+        background-color: #f0f8ff;
+        width: 90%;
+        margin: 0 auto;
+
+        .elemento{
+            margin-bottom: 15px;
+            margin-top: 15px;
+            margin-left: 10px;
+            background-color: #f0f8ff;
+
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 15px
+            }
+            .titulodestino {
+                color: #000941;
+                font-size: 18px;
+                text-align: left;
+                padding-left: 20px;
+                padding-top: 20px;
+            }
+            p {
+                color: #000941;
+                font-size: 18px;
+                text-align: justify;
+                padding: 20px 20px;
+                font-weight: lighter;
+            }
+      }
+    }
+}
+
+
+
+//Main Especies//
+
+.main-especies{
+    background: #f0f8ff;
+
+        .titulo-especies{
+        background-color: #000941;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 1.8rem;
+        height: 5rem;
+        font-weight: normal;}
+
+
+    .aside-especies{
+        float: left;
+        background-color: #0768a4;
+        height: 900px;
+        width: 300px;
+            h4 {
+                font-size: 20px;
+                border-bottom: 1px solid #f0f8ff;
+                display: block;
+                margin-bottom: 25px;
+                margin-top: 1.5rem;
+                padding-left: 15px;
+            }
+
+            ul li {
+                font-size: 16px;
+                text-decoration: none;
+                display: block;
+                margin-bottom: 15px;
+                padding-bottom: 5px;
+                padding-left: 15px;
+            } 
+        } 
+
+    .especies{
+            background-color: #f0f8ff;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #000941;
+
+            .pezespada h2 {
+                color: #000941;
+                font-size: 1.5rem;
+                display: flex;
+                background: #4b92a6;
+                padding-left: 20px;
+            }
+            .contenido{
+                display: flex;
+                img { 
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    margin-top: 10px;
+                    width: 50%;
+                    height: 50%;
+                    border-radius: 50px
+                }
+                p {
+                    color: #000941;
+                    text-align: justify;
+                    padding-right: 50px;
+                    margin-top: 20px;
+                }
+            }
+
+        }
+}
+
+
+//main aprende//
+
+.main-aprende {
+     background-color: #f0f8ff;
+
+    .encabezado{
+        height: 6rem;
+        background-color: #000941;
+    }
+
+    .titulo-aprende {
+        font-size: 1.8rem;
+        color: #f0f8ff;
+        text-align: center;
+        padding-top: 30px;
+        font-weight: normal;
+    }
+   
+    .asideaprende{
+        float: left;
+        background-color: #0768a4;
+        height: 902px;
+        width: 300px;
+
+        .listaaprende li a {
+            font-size: 16px;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 25px;
+            transition: all .3s ease;
+            margin-top: 1.5rem;
+            margin-left: 1rem;
+        }
+        a:hover {
+            color: #000941;
+            padding-left: 6px;}
+        }
+}
+
+
+

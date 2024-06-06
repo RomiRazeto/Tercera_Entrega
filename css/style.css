@@ -1,788 +1,599 @@
-*{font-family: Arial, Helvetica, sans-serif;
-color: #f0f8ff;
-font-size: 16px;
-padding:0;
-margin: 0;
-list-style: none;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f0f8ff;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-body{
-    background: color #f0f8ff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body {
+  background: color #f0f8ff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-header{
-    background-color: #f0f8ff;
+header {
+  background-color: #f0f8ff;
+}
+header .contenedorheader {
+  display: flex;
+  justify-content: left;
+}
+header .contenedorheader .titulo1 {
+  padding-top: 45px;
+  color: #000941;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
-.contenedorheader{
-    display: flex;
-    justify-content: left;
+nav .contenedor {
+  background-color: #4b92a6;
+  height: 0.75rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: block;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+nav .contenedor div a {
+  font-size: 16px;
+  color: #000941;
+  text-decoration: none;
+  margin: 60px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+nav .contenedor a:hover {
+  color: aliceblue;
+  padding-left: 6px;
 }
 
-.titulo1 {
-    padding-top: 45px;
-    color: #000941;
-    font-size: 2.5rem;
-    text-align: center;
+main .envoltura {
+  width: 1440px;
+  height: 25rem;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/LagosPatagonia.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .envoltura .envoltura-texto h2 {
+  color: aliceblue;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 100px;
+}
+main .envoltura .envoltura-texto p {
+  color: aliceblue;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+main .destinos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.contenedor{
-    background-color: #4b92a6;
-    height: .75rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: block;
-    justify-content: center;
+.forescast {
+  font-size: 2rem;
+  color: #000941;
+  text-align: center;
+  padding-top: 20px;
+  background-color: #f0f8ff;
+}
+.forescast h1 {
+  font-size: 2rem;
+  color: #000941;
+  text-align: center;
+  padding-top: 20px;
+}
+.forescast .lugar {
+  color: #000941;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 8px;
+  background-color: #f0f8ff;
+}
+.forescast .contenedorbusqueda {
+  display: inline-block;
+  padding-top: 20px;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  background-color: #f0f8ff;
+}
+.forescast .contenedorbusqueda .regiones {
+  color: #000941;
+  height: 2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.forescast .contenedorbusqueda .ciudades {
+  color: #000941;
+  height: 2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.forescast .contenedorbusqueda option {
+  color: #000941;
+  font-size: 16px;
+}
+.forescast .titulotiempo {
+  color: #000941;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+.forescast .titulo-oleaje {
+  color: #000941;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+.forescast .titulo-fases {
+  color: #000941;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
 }
 
-nav div a{
-    font-size: 16px;
-    color: #000941;
-    text-decoration: none;
-    margin: 60px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    transition: all .3s ease;
+.main-destinos {
+  background-color: #f0f8ff;
+  text-align: center;
+}
+.main-destinos .titulo-destino {
+  color: #ffffff;
+  font-size: 1.8rem;
+  background-color: #000941;
+  margin: none;
+  height: 4rem;
+  padding-top: 30px;
+  font-weight: normal;
+}
+.main-destinos .grid-layout {
+  height: 800px;
+  display: grid;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+  grid-template-columns: 30% 70%;
+  background-color: #f0f8ff;
+  width: 90%;
+  margin: 0 auto;
+}
+.main-destinos .grid-layout .elemento {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 10px;
+  background-color: #f0f8ff;
+}
+.main-destinos .grid-layout .elemento img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.main-destinos .grid-layout .elemento .titulodestino {
+  color: #000941;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.main-destinos .grid-layout .elemento p {
+  color: #000941;
+  font-size: 18px;
+  text-align: justify;
+  padding: 20px 20px;
+  font-weight: lighter;
 }
 
-nav div a:hover{
-    color: aliceblue;
-    padding-left: 6px;
+.main-especies {
+  background: #f0f8ff;
 }
-
-/*media query nav bar*/
-@media (max-width: 600px)
-{.contenedor {width: 100%; height: 80%}
-.menu a {display: block; margin-bottom: 10px;
-    margin-top: 10px;
-    width:60%}
+.main-especies .titulo-especies {
+  background-color: #000941;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 1.8rem;
+  height: 5rem;
+  font-weight: normal;
 }
-
-
-/*main home*/
-main
-.envoltura{
-    width: 1440px;
-    height: 25rem;
-    align-items: center;
-    justify-content: center;
-    background:linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)),
-    url("../imagenes/LagosPatagonia.jpg");
-    background-size: cover;
-    background-position: center;}
-
-.envoltura-texto h2{
-    color: aliceblue;
-    text-align: center;
-    font-size:2rem;
-    padding-top: 100px;
+.main-especies .aside-especies {
+  float: left;
+  background-color: #0768a4;
+  height: 900px;
+  width: 300px;
 }
-
-.envoltura-texto p{
-    color: aliceblue;
-    text-align: center;
-    font-size:1.5rem;
-    margin-bottom: 20px;
-    margin-top: 10px;
+.main-especies .aside-especies h4 {
+  font-size: 20px;
+  border-bottom: 1px solid #f0f8ff;
+  display: block;
+  margin-bottom: 25px;
+  margin-top: 1.5rem;
+  padding-left: 15px;
 }
-
-.destinos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    
+.main-especies .aside-especies ul li {
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
 }
-
-/*media query main home*/
-@media screen and (max-width: 600px)
-{.envoltura-texto h2 
-    { padding-left: 30px; display: inline-block;
-    text-align:left; font-size: 1.2rem; padding-top: 150px;} 
-.envoltura-texto p 
-{display: none;}
-.destinos 
-{text-align: center; display: inline-block; padding-top: 10px; background-color: #000941;}
+.main-especies .especies {
+  background-color: #f0f8ff;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #000941;
 }
-
-/*seccion home*/
-.homeforescast{
-    background-color: #000941;
-    padding-bottom: 1rem;
-    height: 20rem;
+.main-especies .especies .pezespada h2 {
+  color: #000941;
+  font-size: 1.5rem;
+  display: flex;
+  background: #4b92a6;
+  padding-left: 20px;
 }
-
-h3{ 
-    color: rgb(240, 248, 255);
-    text-align: center;
-    font-size: 1.5rem;
-    padding-top: 1.8rem;
-    font-weight: lighter;
-    margin-bottom: .5rem;
+.main-especies .especies .contenido {
+  display: flex;
 }
-
-.parrafo1{
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 3.5rem;
+.main-especies .especies .contenido img {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  width: 50%;
+  height: 50%;
+  border-radius: 50px;
 }
-
-.enlaceforescast{ 
-    color: #000941;
-    text-decoration: none;
-    font-size: 1rem;
-    background-color: aliceblue;
-    text-align: center;
-    padding: 12px 35px;
-    border: 1px solid #0768a4;
-    border-radius: 5px;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    margin-left: 36rem;
+.main-especies .especies .contenido p {
+  color: #000941;
+  text-align: justify;
+  padding-right: 50px;
+  margin-top: 20px;
 }
-
-.iconos{
-    display: block;
-    padding: 50px;
-    text-align: center ;
-}
-
-.iconos img {
-    padding: 15px;
-}
-
-/*media query seccion home*/
-@media(max-width:991px) {
-    .homeforescast {text-align: center; width: 100%; 
-        height: 100%;}
-    .enlaceforescast {padding: 10px 25px; margin-top: 5px;
-        margin-bottom: 5px;
-        margin-left: 5px;}
-}
-
-/*footer*/
-footer{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000941;
-    background-color: #4b92a6;
-    text-transform: capitalize;
-    padding: 50px 0px;
-    margin-top: auto;
-}
-
-.contenedorfooter{
-    max-width: 1200px;
-    margin: 0 auto
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer_1{
-    width: 25%;
-    padding: 0 40px;
-}
-
-.footer_1 h4{
-    color: #000941;
-    font-size: 18px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #000941;
-    padding-bottom: 5px;
-    display: inline-block;
-}
-
-.footer_1 ul li a{
-    font-size: 16px;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 15px;
-    transition: all .3s ease;
-}
-
-.footer_1 ul li a:hover {
-    color: #000941;
-    padding-left: 6px;
-}
-
-.footer_1 ul li{
-    font-size: 16px;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 15px;
-
-}
-.social-link a {
-display: inline-block;
-min-height: 40px;
-width: 40px;
-background-color: #000941;
-margin: 5px 10px 5px 10px;
-text-align: center;
-line-height: 40px;
-border-radius: 50%;
-transition: all .5s ease;
-}
-
-.social-link a:hover{
-    background-color: aqua;
-}
-
-/*media query footer*/
-@media(max-width:991px) {
-    .contenedorfooter {text-align: center;}
-    .footer_1 {width: 100%;
-    margin-bottom: 30px;}
-}
-
-
-/*Aprende*/
-/*Main Aprende*/
 
 .main-aprende {
-    background-color: #f0f8ff;
+  background-color: #f0f8ff;
 }
-
 .main-aprende .encabezado {
-    height: 6rem;
-    background-color: #000941;
+  height: 6rem;
+  background-color: #000941;
 }
-
 .main-aprende .titulo-aprende {
-    font-size: 1.8rem;
-    color: #f0f8ff;
-    text-align: center;
-    padding-top: 30px;
-    font-weight: normal;
+  font-size: 1.8rem;
+  color: #f0f8ff;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: normal;
+}
+.main-aprende .asideaprende {
+  float: left;
+  background-color: #0768a4;
+  height: 902px;
+  width: 300px;
+}
+.main-aprende .asideaprende .listaaprende li a {
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+.main-aprende .asideaprende a:hover {
+  color: #000941;
+  padding-left: 6px;
 }
 
-/*Aside Aprende*/
-.asideaprende{
-    float: left;
-    background-color: #0768a4;
-    height: 902px;
-    width: 300px;
+.homeforescast {
+  background-color: #000941;
+  padding-bottom: 1rem;
+  height: 20rem;
+}
+.homeforescast h3 {
+  color: rgb(240, 248, 255);
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 1.8rem;
+  font-weight: lighter;
+  margin-bottom: 0.5rem;
+}
+.homeforescast .parrafo1 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.homeforescast .enlaceforescast {
+  color: #000941;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: aliceblue;
+  text-align: center;
+  padding: 12px 35px;
+  border: 1px solid #0768a4;
+  border-radius: 5px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 36rem;
+}
+.homeforescast .iconos {
+  display: block;
+  padding: 50px;
+  text-align: center;
+}
+.homeforescast .iconos .iconos img {
+  padding: 15px;
 }
 
-.asideaprende ul li a {
-    font-size: 16px;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 25px;
-    transition: all .3s ease;
-    margin-top: 1.5rem;
-    margin-left: 1rem;
+.tiempo .grid-tiempo {
+  height: 200px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 100%;
+  background-color: #4b92a6;
+  width: 100%;
+  margin: 0 auto;
 }
-
-.asideaprende ul li a:hover {
-    color: #000941;
-    padding-left: 6px;
+.tiempo .card1 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 0.5px solid white;
+  background-color: #000941;
+  border-radius: 15px;
 }
-
-/*Seccion Aprende*/
-.aprendapescar {
-    background-color: aliceblue;
-    height: 60px;
+.tiempo .card1 h2 {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 20px;
 }
-
-.aprendecontenedor1{
-    background-color: #f0f8ff;
-    display: flex;
-    justify-content: right;    
-    height: 195px;
-    border-bottom: 2px solid #000941;
+.tiempo .card1 img {
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 10px;
 }
-
-.aprendecontenedor2{
-    background-color: #f0f8ff;
-    display: flex;
-    justify-content: right;    
-    height: 195px;
-    margin-top: 10px;
-    border-bottom: 2px solid #000941;
-}
-
-.item h3{
-    color: #000941;
-    text-align: left;
-    padding-left: 15px;
-    padding-top: 20px;
-    font-weight: bold;
-}
-
-.item p{
-    color: #000941;
-    height: 195px;
-    padding-left: 15px;
-    text-align: justify;
-    padding-right: 25px; 
-    padding-bottom: 10px;
-}
-
-@media(max-width:991px){
-    .main-aprende .encabezado .titulo-aprende {font-size: 1.5rem;}
-    .asideaprende {display: block; width: 100%; height: 50%;}
-    .asideaprende ul li { text-align: center;}
-    .aprendeapescar {display: inline-block;}
-    .aprendecontenedor1 { display: inline-block; 
-    border-bottom: none;}
-    .aprendecontenedor2 { display: inline-block; 
-    border-bottom: none;}
-
-    .aprendecontenedor1 .item iframe {padding-left: 50px;}
-    .aprendecontenedor2 .item iframe {padding-left: 50px;}
-    
-    .item .p1 {padding-bottom:px; margin-bottom: 5px; height: 80px;}
-    .item .p2 {padding-bottom:px; margin-bottom: 5px; height: 80px;}
-}
-
-
-/*Main destinos*/
-.maindestinos{
-    background-color: #f0f8ff;
-    text-align: center;  
-}
-
-.maindestinos h1{
-    color: #f0f8ff;
-    font-size: 1.8rem;
-    background-color: #000941;
-    margin: none;
-    height: 4rem;
-    padding-top: 30px;
-    font-weight: normal;
-}
-
-.grid-layout{
-    height: 800px;
-    display: grid;
-    grid-template-rows: 33.3%  33.3% 33.3%;
-    grid-template-columns: 30% 70%;
-    background-color: #f0f8ff;
-    width: 90%;
-    margin: 0 auto;
-}
-    
-.elemento{
-    margin-bottom: 15px;
-    margin-top: 15px;
-    margin-left: 10px;
-    background-color: #f0f8ff;
-}
-
-.elemento img{
-    width: 100%;
-    height: 100%;
-    border-radius: 15px
-}
-
-.elemento .titulodestino {
-    color: #000941;
-    font-size: 18px;
-    text-align: left;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-.elemento p {
-    color: #000941;
-    font-size: 18px;
-    text-align: justify;
-    padding: 20px 20px;
-    font-weight: lighter;
-}
-
-@media(max-width:991px){
-    .maindestinos .titulo-destino{font-size: 1.2rem;}
-    .grid-layout { height: 20rem; width: 90%; display: inline-block;}
-    .elemento .titulodestino {margin-top: 5px; padding-top: 5px;
-    margin-bottom: 5px; padding-bottom: 2px;}
-    .elemento p { font-size: 14px; padding-bottom: 5px; padding-top: 2px;}
-}
-
-/*Main forescast*/
-.forescast{
-    background-color: #f0f8ff;
-    margin-top: 0;
-}
-
-.forescast h1 {
-    font-size: 2rem;
-    color: #000941;
-    text-align: center;
-    padding-top: 20px;
-}
-
- .lugar { 
-    color: #000941;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    padding-top: 8px;
-    background-color: #f0f8ff;
-}
-
-.contenedorbusqueda{
-    display: inline-block;
-    padding-top: 20px;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-}
-
-.contenedorbusqueda .regiones {
-    color: #000941;
-    height: 2rem;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.contenedorbusqueda .ciudades {
-    color: #000941;
-    height: 2rem;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.contenedorbusqueda option {
-    color: #000941;
-    font-size: 16px;
-}
-
- div .titulotiempo { 
-    color: #000941;
-    text-align: left;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    font-size: 1.8rem;
-}
-
- .tiempo .grid-tiempo { 
-    height: 200px;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 100%;
-    background-color: #4b92a6;
-    width: 100%;
-    margin: 0 auto;}
-
-.card1 { 
-    margin-bottom: 15px;
-    margin-top: 15px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    border: .5px solid white;
-    background-color: #000941;
-    border-radius: 15px;
-}
-
-.card1 h2 {
-    text-align: center;
-    font-size: 18px;
-    padding-top: 20px; 
-}
-
-.card1 img {
-    text-align: center;
-    padding-bottom: 5px;
-    padding-top: 10px;
-    margin-left: 85px;
- }
-
-.card1 p {
-    text-align: center;
-    font-size: 20px;
-    padding-bottom: 25px; 
+.tiempo .card1 p {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 25px;
 }
 
 .temperaturadelagua {
-    height: 8rem;
-    margin-top: 1rem;
+  height: 8rem;
+  margin-top: 1rem;
 }
-        
-.temperaturadelagua .grid-temperaturadelagua{ 
-    height: 8rem;
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 100%;
-    margin: 0 auto;
+.temperaturadelagua .grid-temperaturadelagua {
+  height: 8rem;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 100%;
+  margin: 0 auto;
 }
-    
-.grid-temperaturadelagua .card4 {
-    margin-bottom: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    border: 1px solid #000941;
-    border-radius: 15px;
-    background-color: #4b92a6;
+.temperaturadelagua .grid-temperaturadelagua .card4 {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid #000941;
+  border-radius: 15px;
+  background-color: #4b92a6;
 }
-    
-.grid-temperaturadelagua .card4 h2 {
-    color:#000941;
-    text-align: center;
-    font-size: 1.5rem;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px; 
+.temperaturadelagua .grid-temperaturadelagua .card4 h2 {
+  color: #000941;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
-.grid-temperaturadelagua .card4 span {
-    color:#000941;
-    text-align: justify;
-    font-size: 18px;
-    display: block;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-          
-.titulo-oleaje { 
-    color: #000941;
-    text-align: left;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    font-size: 1.8rem;
+.temperaturadelagua .grid-temperaturadelagua .card4 span {
+  color: #000941;
+  text-align: justify;
+  font-size: 18px;
+  display: block;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .grid-oleaje {
-    height: 8rem;
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: 100%;
-    margin: 0 auto;}
-    
-.grid-oleaje .card2{
-    background-color: #4b92a6;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    border: 1px solid #000941;
-    border-radius: 15px;
-    }
-
-.card2 h2{
-    color: #000941;  
-    text-align: center;
-    font-size: 22px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px; 
-    }
-
-.card2 p{
-    color: #000941; 
-    text-align: center;
-    font-size: 22px;
-    padding-top: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-weight: bold;
-    }
-
-.titulo-fases {
-    color: #000941;
-    text-align: left;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    font-size: 1.8rem;
-} 
+  height: 8rem;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 100%;
+  margin: 0 auto;
+}
+.grid-oleaje .card2 {
+  background-color: #4b92a6;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid #000941;
+  border-radius: 15px;
+}
+.grid-oleaje .card2 h2 {
+  color: #000941;
+  text-align: center;
+  font-size: 22px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.grid-oleaje .card2 p {
+  color: #000941;
+  text-align: center;
+  font-size: 22px;
+  padding-top: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: bold;
+}
 
 .grid-fases {
-    height: 16rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    margin: 0 auto;
+  height: 16rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  margin: 0 auto;
 }
-
 .grid-fases .card3 {
-    display: flex;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    background-color: #4b92a6;
-    border: 1px solid #000941;
-    border-radius: 15px;
+  display: flex;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #4b92a6;
+  border: 1px solid #000941;
+  border-radius: 15px;
+}
+.grid-fases .card3 h2 {
+  color: #000941;
+  text-align: center;
+  font-size: 22px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.grid-fases .card3 p {
+  color: #000941;
+  text-align: center;
+  font-size: 22px;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: bold;
 }
 
-.card3 h2{
-    color: #000941;  
-    text-align: center;
-    font-size: 22px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px; 
+.mareas .titulo-mareas {
+  color: #000941;
+  text-align: center;
+  margin-top: 4%;
+  font-size: 1.8rem;
 }
-    
-.card3 p{
-    color: #000941; 
-    text-align: center;
-    font-size: 22px;
-    padding-top: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-weight: bold;
-}
-
-.titulo-mareas {
-    color: #000941;
-    text-align: center;
-    margin-top: 4%;
-    font-size: 1.8rem;
-}
-    
 .mareas h3 {
-    color: #000941;
-    text-align: center;
-    padding-top: 5px;
-    font-size: 1.2rem;
- }
-
+  color: #000941;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 1.2rem;
+}
 .mareas img {
-    margin-top: 2rem;
-    margin-left: 10rem;
-    padding-bottom: 2rem;
+  margin-top: 2rem;
+  margin-left: 10rem;
+  padding-bottom: 2rem;
 }
 
-
-@media(max-width:991px){
-     div .titulotiempo { text-align: center;}
-    .tiempo .grid-tiempo {height: 120px;}
-    .grid-tiempo .card1 img{display: none;}
-    .card1{margin-left: 5px; margin-right: 5px;
-    background-color: #f0f8ff;}
-    .card1 h2 {color: #000941;font-size: 14px;
-    padding-top: 10px;}
-    .card1 p {color: #000941;font-size: 14px;
-        padding-top: 10px; font-weight: bold;}
-    }
-
-@media(max-width:991px){
-    .temperaturadelagua { height: 6rem;}
-    .temperaturadelagua .grid-temperaturadelagua {display: flex;
-    height: 6rem;}
-    .grid-temperaturadelagua .card4 {margin-left: 5px;
-    margin-right: 5px}
-    .grid-temperaturadelagua .card4 h2 {font-size: 1rem;}
-    .grid-temperaturadelagua .card4 span {font-size: 14px;padding-top: 10px;}
+.aprendeapescar {
+  background-color: aliceblue;
+  height: 60px;
+}
+.aprendeapescar .aprendecontenedor1 {
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: right;
+  height: 195px;
+  border-bottom: 2px solid #000941;
+}
+.aprendeapescar .aprendecontenedor2 {
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: right;
+  height: 195px;
+  margin-top: 10px;
+  border-bottom: 2px solid #000941;
+}
+.aprendeapescar .item h3 {
+  color: #000941;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+.aprendeapescar .item p {
+  color: #000941;
+  height: 195px;
+  padding-left: 15px;
+  text-align: justify;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 
-@media(max-width:991px) {
-    .titulo-oleaje { text-align: center; padding-top: 3px;}
-    .grid-oleaje {height: 6rem; background-color: #4b92a6; padding-top: 10px;}
-    .grid-oleaje .card2 {background-color: #f0f8ff; }
-    .grid-oleaje .card2 h2 {font-size: 16px;
-    padding-top: 10px; }
-    .card2 p {font-size: 16px; padding-top:1px; } 
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000941;
+  background-color: #4b92a6;
+  text-transform: capitalize;
+  padding: 50px 0px;
+  margin-top: auto;
+}
+.footer .contenedorfooter {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .footer_1 {
+  width: 25%;
+  padding: 0 40px;
+}
+.footer .footer_1 h4 {
+  color: #000941;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000941;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+.footer ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+.footer .footer_1 ul li a:hover {
+  color: #000941;
+  padding-left: 6px;
+}
+.footer .footer_1 ul li {
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+}
+.footer .social-link a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: #000941;
+  margin: 5px 10px 5px 10px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.footer .social-link a:hover {
+  background-color: aqua;
 }
 
-@media(max-width:991px){
-    .titulo-fases {text-align: center; width: 100%;;}
-    .grid-fases {display:grid; width: 100%;}
-    .grid-fases .card3 img { display: none;}
-    .grid-fases .card3 {display:inline; padding-top: 3px;}
-    .card3 h2{font-size: 16px;padding-top: 10px;}
-    .card3 p {font-size: 14px; padding-right: 1px; padding-top: 5px;}
+@media (max-width: 480px) {
+  nav .contenedor {
+    background-color: black;
+  }
 }
 
-@media(max-width:991px){
-    .mareas img {margin-left: 1rem; width: 95%; }
-}
-
-
-/*Main Especies*/
-.main-especies {
-    background: #f0f8ff;
-}
-
-div .titulo-especies{
-    background-color: #000941;
-    color: #ffffff;
-    text-align: center;
-    padding-top: 30px;
-    font-size: 1.8rem;
-    height: 5rem;
-    font-weight: normal;
-}
-
-.aside-especies {
-    float: left;
-    background-color: #0768a4;
-    height: 900px;
-    width: 300px;
-}
-
-.aside-especies h4 {
-    font-size: 20px;
-    border-bottom: 1px solid #f0f8ff;
-    display: block;
-    margin-bottom: 25px;
-    margin-top: 1.5rem;
-    padding-left: 15px;
-}
-
-.aside-especies ul li {
-    font-size: 16px;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 15px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-}
-
-.especies {
-    background-color: #f0f8ff;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #000941;
-}
-
-.especies .pezespada h2 {
-    color: #000941;
-    font-size: 1.5rem;
-    display: flex;
-    background: #4b92a6;
-    padding-left: 20px;
-}
-    
-.contenido{
-    display: flex;
-}
-
-.contenido img { 
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 10px;
-    width: 50%;
-    height: 50%;
-    border-radius: 50px
-}
-
-.especies .contenido p {
-    color: #000941;
-    text-align: justify;
-    padding-right: 50px;
-    margin-top: 20px;
-}
-
-@media(max-width:991px) {
-    .main-especies .titulo-especies {font-size: 1.2rem;
-    }
-    .aside-especies  {display: block; width: 100%;}
-    .aside-especies ul li { text-align: center;}
-    .especies div { display: block;}
-    .especies .pezespada h2 { background-color: #f0f8ff; padding-top: 10px;}
-    .especies .contenido img {width: 80%;}
-    .especies .contenido p {font-size: 14px; padding-left: 20px;
-    padding-right: 70px;}
-}
+/*# sourceMappingURL=style.css.map */
